@@ -1,7 +1,30 @@
 # AI_game_auto_play
 AI games auto-play networks training, linear regression
 
+```
+coefficient_0 = next_pipe_bottom_y_array - player_y_array + 0
+coefficient_0 = coefficient_0 - (player_y_array - target)
 
+coefficient_5 = player_y_array - next_pipe_top_y_array + 0
+coefficient_5 = coefficient_5 - (player_y_array - target)
+
+contrl = ( player_y_array - next_pipe_dist_to_player_array ) + ( 50 * reward )
+coff_0 = coefficient_0
+coff_1 = coefficient_5
+coff_2 = 1
+coff_3 = 1
+coff_4 = 1
+coff_5 = 1
+coff_6 = 1
+coff_7 = 1
+coff_8 = 1
+coff_9 = 1
+coff_10 = 1
+coff_11 = 1
+
+DATA_row = tf.constant([ contrl, coff_0, coff_1, coff_2, coff_3, coff_4, coff_5, coff_6, coff_7, coff_8, coff_9, coff_10, coff_11,
+			1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ], shape=(1, 1, 1, 30), dtype=tf.float32)
+```
 
 ## Files and Directory ##
 
