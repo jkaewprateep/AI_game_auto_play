@@ -26,6 +26,41 @@ DATA_row = tf.constant([ contrl, coff_0, coff_1, coff_2, coff_3, coff_4, coff_5,
 			1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ], shape=(1, 1, 1, 30), dtype=tf.float32)
 ```
 
+## Model ##
+
+```
+model = tf.keras.models.Sequential([
+	tf.keras.layers.InputLayer(input_shape=(1, 30)),
+	tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(128, return_sequences=True, return_state=False)),
+	tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(128)),
+	tf.keras.layers.Dense(256),
+	tf.keras.layers.Dropout(.4, input_shape=(256,))
+])
+		
+model.add(tf.keras.layers.Flatten())
+model.add(tf.keras.layers.Dense(192))
+model.add(tf.keras.layers.Dense(10))
+model.summary()
+```
+
+## Optimizer ##
+
+```
+optimizer = tf.keras.optimizers.SGD(
+    learning_rate=learning_rate,
+    momentum=momentum,
+    nesterov=False,
+    name='SGD',
+)
+```
+
+## Loss Function ##
+
+```
+lossfn = tf.keras.losses.MeanSquaredLogarithmicError(reduction=tf.keras.losses.Reduction.AUTO, 
+                  name='mean_squared_logarithmic_error')
+```
+
 ## Files and Directory ##
 
 Files and directory perfrom in the action, training and play without external input proves our concept it true.
