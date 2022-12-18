@@ -66,7 +66,7 @@ optimizer = tf.keras.optimizers.SGD(
 
 ## Loss Function ##
 
-Loss function approches is in logarithm scales then you don't need to compare all long history with some point in the median but it repeating tasks and report of the running accuracy as linear algorithms.
+Loss function approches is in logarithm scales then you don't need to compare all long history with some point in the median but it repeating tasks and report of the running accuracy as linear algorithms. 👨🏻‍🏫💬 Using linear regression you don't need to repeating the same task and logarithm preserved some properties of networks call transmissions.
 ```
 lossfn = tf.keras.losses.MeanSquaredLogarithmicError(reduction=tf.keras.losses.Reduction.AUTO, 
                   name='mean_squared_logarithmic_error')
