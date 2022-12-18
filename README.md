@@ -1,7 +1,8 @@
 # AI_game_auto_play
 AI games auto-play networks training, linear regression, everything in control linear adding, subtraction and ( 50 * reward value ). It proved that simple tasks are done by simple approach to the solution by adding summation, that create SGD optimizer is making senses with linear gragression even loss function is root mean square.
 
-##### Positive ######
+##### 👨🏻‍🏫💬 Positive ######
+
 1. It is self control equation, ( distance_to_goal - player_y_array ) is enough for running to goal when adding more dismension ( player_x_array - object_y_array ) is enough for apprache few jumps on target too.
 2. All varaiables is consider do not use 0 since it is significant and make anybody significant or you try 13 or 73
 3. Our game object is pass though each gap as possible with time efficientcy or rewards feed.
@@ -34,7 +35,7 @@ DATA_row = tf.constant([ contrl, coff_0, coff_1, coff_2, coff_3, coff_4, coff_5,
 
 ## Model ##
 
-Only LSTM layer is enough but I added Dense layer because the last model had problem with overfilt it play all night but few day it become overfits even I added exception in traning callbacks.
+Only LSTM layer is enough but I added Dense layer because the last model had problem with overfilt it play all night but few day it become overfits even I added exception in traning callbacks. 👨🏻‍🏫💬 Dense layer transfrom accumulate works to output different, over fitting problems alway found in AI games problem try to create limits and stop before it overcomes you. 
 ```
 model = tf.keras.models.Sequential([
 	tf.keras.layers.InputLayer(input_shape=(1, 30)),
