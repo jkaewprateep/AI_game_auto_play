@@ -1,5 +1,11 @@
 # AI_game_auto_play
-AI games auto-play networks training, linear regression
+AI games auto-play networks training, linear regression, everything in control linear adding, subtraction and ( 50 * reward value ). It proved that simple tasks are done by simple approach to the solution by adding summation, that create SGD optimizer is making senses with linear gragression even loss function is root mean square.
+
+##### Positive ######
+1. It is self control equation, ( distance_to_goal - player_y_array ) is enough for running to goal when adding more dismension ( player_x_array - object_y_array ) is enough for apprache few jumps on target too.
+2. All varaiables is consider do not use 0 since it is significant and make anybody significant or you try 13 or 73
+3. Our game object is pass though each gap as possible with time efficientcy or rewards feed.
+4. Power, Square, Absolute, Devide, Centimeters and applied it will make the networks learn fast but it hard to control when there has some problem and your equation start more complex for complete all tasks may may need time or more samples required.
 
 ```
 coefficient_0 = next_pipe_bottom_y_array - player_y_array + 0
