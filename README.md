@@ -1,5 +1,5 @@
 # AI_game_auto_play
-AI games auto-play networks training, linear regression, everything in control linear adding, subtraction and ( 50 * reward value ). It proved that simple tasks are done by simple approach to the solution by adding summation, that create SGD optimizer is making senses with linear gragression even loss function is root mean square.
+AI games auto-play networks training, linear regression, everything in control linear adding, subtraction and ( 50 * reward value ). It proved that simple tasks are done by simple approach to the solution by adding summation, that create SGD optimizer is making senses with linear regression even loss function is root mean square.
 
 ##### 👨🏻‍🏫💬 Positive ######
 
