@@ -53,6 +53,8 @@ model.summary()
 ## Optimizer ##
 
 I select simple optimizer that we can estimate of it work as simple before you can apply your optimizer that is because you can assume the loss function value and it make sense when actions learning display as list start changing as this example { 1, 1, 1, 1, 1, 9, 9, 9 ,9 ,9 },  { 1, 1, 1, 1, 5, 9, 9, 9 ,9 ,9 },  { 1, 1, 7, 4, 5, 9, 9, 9 ,9 ,9 } ...
+
+The SGD is simple as ( New target = AX + BY + C ) 💃( 👩‍🏫 )💬 The demads graph is always increase by time to meet the satisfaction revese it becomes ( BY - AX + C ) because you using previous data record and when have different of demand area you know the value in your stocks that help.
 ```
 optimizer = tf.keras.optimizers.SGD(
     learning_rate=learning_rate,
