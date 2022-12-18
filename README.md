@@ -64,6 +64,7 @@ optimizer = tf.keras.optimizers.SGD(
 
 ## Loss Function ##
 
+Loss function approches is in logarithm scales then you don't need to compare all long history with some point in the median but it repeating tasks and report of the running accuracy as linear algorithms.
 ```
 lossfn = tf.keras.losses.MeanSquaredLogarithmicError(reduction=tf.keras.losses.Reduction.AUTO, 
                   name='mean_squared_logarithmic_error')
@@ -87,7 +88,9 @@ Files and directory perfrom in the action, training and play without external in
 ## Result ##
 
 This screen shot indicate AI auto-play is fully learning by itself, not use guiding I create and test both methods see previous example.
+
 ![Alt text](https://github.com/jkaewprateep/AI_game_auto_play/blob/main/10.png?raw=true "Title")
 
 This Flappy birds game is good example because no sample action cheats and accuracy actions.
+
 ![Alt text](https://github.com/jkaewprateep/AI_game_auto_play/blob/main/FlappyBird_small.gif?raw=true "Title")
