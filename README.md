@@ -52,6 +52,7 @@ model.summary()
 
 ## Optimizer ##
 
+I select simple optimizer that we can estimate of it work as simple before you can apply your optimizer that is because you can assume the loss function value and it make sense when actions learning display as list start changing as this example { 1, 1, 1, 1, 1, 9, 9, 9 ,9 ,9 },  { 1, 1, 1, 1, 5, 9, 9, 9 ,9 ,9 },  { 1, 1, 7, 4, 5, 9, 9, 9 ,9 ,9 } ...
 ```
 optimizer = tf.keras.optimizers.SGD(
     learning_rate=learning_rate,
@@ -69,9 +70,10 @@ lossfn = tf.keras.losses.MeanSquaredLogarithmicError(reduction=tf.keras.losses.R
 ```
 ## Taget actions ##
 
-For accuracy action I leaved none action at the begining and end, I added some none action between to confrim the networks accuracy it will makt you training harder or sometimes it required few time relarning from start but surely your network if success it will be accuracy networks.
+For accuracy action I leaved none action at the begining and end, I added some none action between to confrim the networks accuracy it will make you training harder or sometimes it required few time relarning from start but surely your network if success it will be accuracy networks.
 ```
-actions = { "none_1": K_h, "up_1": K_w, "none_2": K_h, "none_3": K_h, "none_4": K_h, "none_5": K_h, "none_6": K_h, "none_7": K_h, "none_8": K_h, "none_9": K_h }
+actions = { "none_1": K_h, "up_1": K_w, "none_2": K_h, "none_3": K_h, "none_4": K_h, 
+                      "none_5": K_h, "none_6": K_h, "none_7": K_h, "none_8": K_h, "none_9": K_h }
 ```
 
 ## Files and Directory ##
