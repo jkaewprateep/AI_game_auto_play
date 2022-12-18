@@ -73,7 +73,7 @@ lossfn = tf.keras.losses.MeanSquaredLogarithmicError(reduction=tf.keras.losses.R
 ```
 ## Taget actions ##
 
-For accuracy action I leaved none action at the begining and end, I added some none action between to confrim the networks accuracy it will make you training harder or sometimes it required few time relarning from start but surely your network if success it will be accuracy networks.
+For accuracy action I leaved none action at the begining and end, I added some none action between to confrim the networks accuracy it will make you training harder or sometimes it required few time relarning from start but surely your network if success it will be accuracy networks. 👩‍🏫💬 You setup first action at the most right or left distributions of the networks is working very fast, plots graph outside of the area will consider as action[0] than action[1] then it hit the ceiling often. 
 ```
 actions = { "none_1": K_h, "up_1": K_w, "none_2": K_h, "none_3": K_h, "none_4": K_h, 
                       "none_5": K_h, "none_6": K_h, "none_7": K_h, "none_8": K_h, "none_9": K_h }
