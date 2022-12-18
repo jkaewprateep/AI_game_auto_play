@@ -34,6 +34,7 @@ DATA_row = tf.constant([ contrl, coff_0, coff_1, coff_2, coff_3, coff_4, coff_5,
 
 ## Model ##
 
+Only LSTM layer is enough but I added Dense layer because the last model had problem with overfilt it play all night but few day it become overfits even I added exception in traning callbacks.
 ```
 model = tf.keras.models.Sequential([
 	tf.keras.layers.InputLayer(input_shape=(1, 30)),
